@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<title>МосНефтеТранс</title>
+	@@include('./inc/components/pagehead.html')
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+</head>
+<body class="side_open">
+	<div id="site" class="profile-wrapper">
+		<div id="head">
+			<div class="head_inner">
+				<a href="#" class="logo_bl"></a>
+				<a class="mob_menu_link"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="18px"><path fill-rule="evenodd" d="M-0.000,18.000 L-0.000,16.000 L24.000,16.000 L24.000,18.000 L-0.000,18.000 ZM-0.000,8.000 L24.000,8.000 L24.000,10.000 L-0.000,10.000 L-0.000,8.000 ZM-0.000,-0.000 L24.000,-0.000 L24.000,2.000 L-0.000,2.000 L-0.000,-0.000 Z"/></svg></a>
+				<a href="#" class="logo_mob"></a>
+				<div class="search_bl">
+					<form action="#">
+						<input type="text" placeholder="Search">
+					</form>
+				</div>
+				<div class="head_calc">
+					<a href="#"></a>
+				</div>
+				<div class="user_menu">
+					<a class="link"><span></span></a>
+					<ul class="menu">
+						<li><a href="#">Menu 1</a></li>
+						<li><a href="#">Menu 2</a></li>
+						<li><a href="#">Menu 3</a></li>
+						<li><a href="#">Menu 4</a></li>
+					</ul>
+				</div>
+				<div class="head_mail">
+					<a href="#">info@mos-nt.ru</a>
+				</div>
+				<div class="head_ph">
+					<a href="#">+7 (495) 53-22-333</a>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<div id="body">
+			<div class="sidebar_wrap">
+				<div class="sidebar_menu">
+					<ul class="menu">
+						<li>
+							<a href="#">
+								<span class="name">Карта нефтебаз</span>
+								<span class="ico ico01"></span>
+							</a>
+							<ul>
+								<li><a href="#">Подменю 1</a></li>
+								<li><a href="#">Подменю 2</a></li>
+								<li><a href="#">Подменю 3</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">
+								<span class="name">История цен</span>
+								<span class="ico ico02"></span>
+							</a>
+							<ul>
+								<li><a href="#">Подменю 1</a></li>
+								<li><a href="#">Подменю 2</a></li>
+								<li><a href="#">Подменю 3</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="sidebar_menu">
+					<ul class="menu">
+						<li>
+							<a href="#">
+								<span class="name">Мой профиль</span>
+								<span class="ico ico03"></span>
+							</a>
+							<ul>
+								<li><a href="#">Подменю 1</a></li>
+								<li><a href="#">Подменю 2</a></li>
+								<li><a href="#">Подменю 3</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">
+								<span class="name">Мои Компании</span>
+								<span class="ico ico04"></span>
+							</a>
+							<ul>
+								<li><a href="#">Подменю 1</a></li>
+								<li><a href="#">Подменю 2</a></li>
+								<li><a href="#">Подменю 3</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">
+								<span class="name">Аналитика</span>
+								<span class="ico ico05"></span>
+							</a>
+							<ul>
+								<li><a href="#">Подменю 1</a></li>
+								<li><a href="#">Подменю 2</a></li>
+								<li><a href="#">Подменю 3</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="sidebar_menu">
+					<ul class="menu">
+						<li>
+							<a href="#">
+								<span class="name">Карта нефтебаз</span>
+								<span class="ico ico01"></span>
+							</a>
+							<ul>
+								<li><a href="#">Подменю 1</a></li>
+								<li><a href="#">Подменю 2</a></li>
+								<li><a href="#">Подменю 3</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">
+								<span class="name">История цен</span>
+								<span class="ico ico02"></span>
+							</a>
+							<ul>
+								<li><a href="#">Подменю 1</a></li>
+								<li><a href="#">Подменю 2</a></li>
+								<li><a href="#">Подменю 3</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">
+								<span class="name">Мой профиль</span>
+								<span class="ico ico03"></span>
+							</a>
+							<ul>
+								<li><a href="#">Подменю 1</a></li>
+								<li><a href="#">Подменю 2</a></li>
+								<li><a href="#">Подменю 3</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">
+								<span class="name">Мои Компании</span>
+								<span class="ico ico04"></span>
+							</a>
+							<ul>
+								<li><a href="#">Подменю 1</a></li>
+								<li><a href="#">Подменю 2</a></li>
+								<li><a href="#">Подменю 3</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">
+								<span class="name">Аналитика</span>
+								<span class="ico ico05"></span>
+							</a>
+							<ul>
+								<li><a href="#">Подменю 1</a></li>
+								<li><a href="#">Подменю 2</a></li>
+								<li><a href="#">Подменю 3</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="content_wrap content_wrap__profile clearfix">
+				<div class="profile-left">
+					<div class="profile-info">
+						<div onclick="o2.popups.showPopup('.profile-edit-popup')" class="profile-edit"></div>
+						<div class="profile-photo">
+							<img src="images/profile-photo.png" alt="">
+						</div>
+						<div class="profile-name">Макаренко Владислава</div>
+						<div class="profile-status">пользователь (<span>в сети</span>)</div>
+						<div class="profile-balance">Баланс: <span>0</span>руб</div>
+						<div class="up-balance">
+							<a  href="#">Пополнить баланс</a>
+						</div>
+						<div class="firms-quantity">55 компаний</div>
+						<div class="firms-activity">
+							<div class="firms-active">
+								<div class="firms-active-quantity">45</div>
+								<div class="firms-active-text">активных</div>
+							</div>
+							<div class="firms-disactive">
+								<div class="firms-active-quantity">10</div>
+								<div class="firms-active-text">неактивных</div>
+							</div>
+						</div>
+						<div class="profile-main-stats">
+							<div class="main-stats__item">
+								<div class="main-stats__item-num">15</div>
+								<div class="main-stats__item-text">сделок</div>
+							</div>
+							<div class="main-stats__item">
+								<div class="main-stats__item-num">12 000</div>
+								<div class="main-stats__item-text">объем, т.</div>
+							</div>
+							<div class="main-stats__item">
+								<div class="main-stats__item-num">430 500</div>
+								<div class="main-stats__item-text">оборот, руб.</div>
+							</div>
+						</div>
+					</div>
+					<div class="profile-staistics">
+						<div class="staistics__item">
+							<div class="staistics__item-text">Общее количество исх. звонков</div>
+							<div class="staistics__item-quantity">154</div>
+						</div>
+						<div class="staistics__item">
+							<div class="staistics__item-text">Количество успешных исх. звонков</div>
+							<div class="staistics__item-quantity">120</div>
+						</div>
+						<div class="staistics__item">
+							<div class="staistics__item-text">Целевые звонки</div>
+							<div class="staistics__item-quantity">84</div>
+						</div>
+						<div class="staistics__item">
+							<div class="staistics__item-text">Среднее время разговора</div>
+							<div class="staistics__item-quantity">0:34:12</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="profile-right">
+					<div class="profile-tabs">
+						<div class="profile-tabs__buttons clearfix">
+							<div class="profile-tabs__button active" data-tab-id="0" onclick="o2.tabs.openTab(this, event)">Лента новостей</div>
+							<div class="profile-tabs__button" data-tab-id="1" onclick="o2.tabs.openTab(this, event)">Техническая поддержка</div>
+						</div>
+						<div class="profile-tabs-content">
+							<div class="profile-tab active" data-tab-id="0">
+								<div class="profile-news-wrapper">
+									<div class="profile-news">
+										<div class="news-item">
+											<div class="news-item__date">Сегодня</div>
+											<div class="news-item__title">Изменение цен на <b>Калужская НБ</b></div>
+											<div class="news-item__text">
+												Дизельное топливо: <b>32.90</b><br>
+												Бензин: <b>31.90</b>
+											</div>
+										</div>
+										<div class="news-item">
+											<div class="news-item__date">Сегодня</div>
+											<div class="news-item__title">Сделка <b>"Асфальтостроение"</b> одобрена администратором</div>
+										</div>
+										<div class="news-item">
+											<div class="news-item__date">Сегодня</div>
+											<div class="news-item__title">Новый продукт <b>Широкий нефтяной дистиллят</b> добавлен на Калужская НБ</div>
+										</div>
+										<div class="news-item">
+											<div class="news-item__date">Сегодня</div>
+											<div class="news-item__title">Добавлена новая компания <b>"Асфальтостроение"</b></div>
+										</div>
+										<div class="news-item">
+											<div class="news-item__date">Сегодня</div>
+											<div class="news-item__title">Вам начислено <b>4 500 бонусов</b></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="profile-tab" data-tab-id="1">
+								<div class="support-chat">
+									<div class="messages-wrapper">
+										<div class="message-item">
+											<div class="message-item__avatar">
+												<img src="images/profile-photo.png" alt="">
+											</div>
+											<div class="message-item__message">
+												<div class="message-item__name">Вы</div>
+												<div class="message-item__text">Здравсвтуйте. Подскажите как начисляются бонусы?</div>
+												<div class="message-item__time">10 минут назад</div>
+											</div>
+										</div>
+										<div class="message-item">
+											<div class="message-item__avatar">
+												<img src="images/profile-photo.png" alt="">
+											</div>
+											<div class="message-item__message">
+												<div class="message-item__name">Администратор</div>
+												<div class="message-item__text">Добрый день. Бонусы начисляются по формуле исходя из ваших отгрузок и продаж</div>
+												<div class="message-item__time">10 минут назад</div>
+											</div>
+										</div>
+										<div class="message-item">
+											<div class="message-item__avatar">
+												<img src="images/profile-photo.png" alt="">
+											</div>
+											<div class="message-item__message">
+												<div class="message-item__name">Вы</div>
+												<div class="message-item__text">Понятно, спасибо. </div>
+												<div class="message-item__time">10 минут назад</div>
+											</div>
+										</div>
+									</div>
+									<div placeholder="Введите ваше сообщение" class="message-input" contenteditable="true"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="profile-diagrams">
+						<div class="diagrams-item">
+							<div class="diagram-title"><span>Статистика отгрузок по компаниям:</span></div>
+							<div class="diagram-wrapper">
+								<canvas id="diagram1" width="400" height="400"></canvas>
+							</div>
+						</div>
+						<div class="diagrams-item">
+							<div class="diagram-title"><span>Статистика отгрузок по компаниям:</span></div>
+							<div class="diagram-wrapper">
+								<canvas id="diagram2" width="400" height="400"></canvas>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="overlay _overlay card-overlay" onclick="o2.popups.closePopup();">
+		<div class="profile-edit-popup popup" onclick="event.stopPropagation();">
+			<div class="profile-edit-popup__close" onclick="o2.popups.closePopup();""><i class="fa fa-times" aria-hidden="true"></i></div>
+			<div class="profile-edit-popup__title">Редактирование профиля</div>
+			<div class="profile-edit-popup__undertitle">Контактная информация</div>
+			<div class="profile-edit-popup__input-wrapper">
+				<input placeholder="Фамилия" type="text">
+			</div>
+			<div class="profile-edit-popup__input-wrapper">
+				<input placeholder="Имя" type="text">
+			</div>
+			<div class="profile-edit-popup__input-wrapper">
+				<input placeholder="Город" type="text">
+			</div>
+			<div class="profile-edit-popup__input-wrapper">
+				<input placeholder="Пол" type="text">
+			</div>
+			<div class="profile-edit-popup__input-wrapper">
+				<input placeholder="Телефон" type="text">
+			</div>
+			<div class="profile-edit-popup__input-wrapper">
+				<input placeholder="Доп. телефон" type="text">
+			</div>
+			<div class="profile-edit-popup__input-wrapper">
+				<input placeholder="Email" type="text">
+			</div>
+			<div class="profile-edit-popup__undertitle">Изменить пароль</div>
+			<div class="profile-edit-popup__input-wrapper">
+				<input placeholder="Введите старый пароль" type="password">
+				<div class="show-pass" onclick="o2.showPass(this)"></div>
+			</div>
+			<div class="profile-edit-popup__input-wrapper">
+				<input placeholder="Введите новый пароль" type="password">
+				<div class="show-pass" onclick="o2.showPass(this)"></div>
+			</div>
+			<div class="profile-edit-popup__avatar-block">
+				<div class="profile-edit-popup__avatar-block-title">
+					Загрузить аватар (250x250 пикселей)
+				</div>
+				<div class="profile-edit-popup__avatar-block-link">
+					<a href="#">Добавить аватар</a>
+				</div>
+				<label class="autorization-checkbox-label">
+					<input type="checkbox" class="checkbox">
+					<span></span>
+					Подписаться на рассылку
+				</label>
+				<div class="profile-edit-popup__avatar-block-button">
+					<button>Сохранить</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

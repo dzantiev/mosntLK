@@ -1,0 +1,439 @@
+.registration-wrapper
+{
+	height: calc(100vh - 68px);
+	background-image: url('../images/registration.png');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: rgba(black, 0.3);
+	position: relative;
+	color: white;
+	.overlay
+	{
+		width: 100%;
+		height: 100%;
+		background-color: rgba(black, 0.8);
+		display: flex;
+		align-items: center;
+	}
+}
+.registration-descr
+{
+	padding-left: 162px;
+}
+.registration-pretitle,
+.registration-text
+{
+	font-family: $roboto;
+	font-weight: 300;
+	font-size: 21px;
+}
+.registration-pretitle
+{
+	margin-bottom: 5px;
+}
+.registration-title
+{
+	font-family: $roboto;
+	font-weight: 300;
+	font-size: 42px;
+	margin-bottom: 16px;
+	span
+	{
+		font-weight: normal;
+	}
+}
+.registration-text
+{
+	font-size: 18px;
+	line-height: 24px;
+	a
+	{
+		color: white;
+		border-bottom: 1px solid #fff;;
+		&:hover
+		{
+			border-bottom-color: transparent;
+		}
+	}
+}
+.forgot-pass
+{
+	margin-top: 20px;
+	display: inline-block;
+	color: #74708d;
+	transition: all 0.3s;
+	border-bottom: 1px dotted #74708d;
+	&:hover
+	{
+		border-bottom: 1px solid transparent;
+		transition: all 0.3s;
+	}
+}
+.registration-form-wrapper
+{
+	width: 100%;
+}
+.registration-form
+{
+	display: flex;
+	align-items: center;
+	position: absolute;
+	right: 0;
+	height: 100%;
+	width: 415px;
+	max-width: 415px;
+	background-color: white;
+	padding-left: 35px;
+	padding-right: 35px;
+	text-align: center;
+	.jq-selectbox
+	{
+		width: 100%;
+		height: 33px;
+		margin-bottom: 17px;
+		
+		.jq-selectbox__select
+		{
+			border: none;
+			background: white;
+			box-shadow: none;
+			border-radius: 0;
+			border-bottom: 2px solid #b0bac2 !important;
+			padding-left: 0;
+		}
+		.jq-selectbox__trigger
+		{
+			border-left: none;
+		}
+		.jq-selectbox__select-text
+		{
+			color: #acb7bf;
+			opacity: 1;
+			text-align: left;
+		}
+		
+		.jq-selectbox__trigger-arrow
+		{
+			right: 0;
+			top: 16px;
+		}
+	}
+	.jq-selectbox.focused .jq-selectbox__select
+		{
+			border: none;
+			border-bottom: 2px solid #b0bac2 !important;
+		}
+}
+.registration-input::-webkit-input-placeholder,
+{
+	color: #acb7bf !important;
+}
+.registration-input::-moz-placeholder
+{
+	color: #acb7bf !important;
+}
+.registration-input:-moz-placeholder
+{
+	color: #acb7bf !important;
+}
+.registration-input:-ms-input-placeholder
+{
+	color: #acb7bf !important;
+}
+.input-wrapper
+{
+	position: relative;
+	&.error
+	{
+		&:before
+		{
+			position: absolute;
+			content: 'Вы не заполнили имя';
+			display: inline-block;
+			width: 223px;
+			height: 45px;
+			background-color: #ff0000;
+			left: -258px;
+    		top: -5px;
+    		font-family: $roboto;
+    		font-weight: 300;
+    		font-size: 12px;
+    		line-height: 43px;
+    		text-align: center;
+		}
+		&:after
+		{
+			content: '';
+			display: inline-block;
+			position: absolute;
+			border: 5px solid transparent;
+			border-left-color: #ff0000 ;
+			z-index: 1;
+			left: -35px;
+			top: 11px;
+		}
+	}
+}
+.input-wrapper__phone:before
+{
+	content: 'Вы не указали телефон' !important;
+	display: none;
+}
+.input-wrapper__sirname:before
+{
+	content: 'Вы не заполнили фамилию' !important;
+	display: none;
+}
+.input-wrapper__city:before
+{
+	content: 'Вы не указали город' !important;
+	display: none;
+}
+.input-wrapper__gender:before
+{
+	content: 'Вы не выбрали пол' !important;
+	display: none;
+}
+.input-wrapper__email:before
+{
+	content: 'Вы не указали почту' !important;
+	display: none;
+}
+.input-wrapper__pass:before
+{
+	content: 'Слишком простой пароль' !important;
+	display: none;
+}
+.input-wrapper__pass2:before
+{
+	content: 'Пароли не совпадают' !important;
+	display: none;
+}
+.registration-input
+{
+	border-bottom: 2px solid #b0bac2 !important;
+	padding-top: 4px;
+	letter-spacing: -1.1px;
+	margin-bottom: 17px;
+	color: #555c61 !important;
+	height: 33px;
+}
+.registration-form__title
+{
+	color: $text-color;
+	text-transform: uppercase;
+	text-align: center;
+	font-family: $roboto;
+	font-weight: 500;
+	font-size: 18px;
+	margin-bottom: 24px;
+}
+.password-wrapper
+{
+	position: relative;
+}
+.show-pass
+{
+	position: absolute;
+	background-image: url('../images/eye.png');
+	width: 19px;
+	height: 11px;
+	background-size: contain;
+	right: 0;
+	z-index: 1;
+	top: 13px;
+	cursor: pointer;
+}
+.reg-btn
+{
+	width: 184px;
+	border-radius: 3px;
+	background-color: #d8880d;
+	display: inline-block;
+	margin-top: 20px;
+	font-size: 14px;
+	font-family: $roboto;
+	font-weight: normal;
+	border: none;
+	padding-top: 8px;
+    padding-bottom: 10px;
+    transition: all 0.3s;
+    &:hover
+    {
+    	background-color: #e89e2d;
+    	transition: all 0.3s;
+    }
+}
+.autorization-form
+{
+	text-align: left;
+	.reg-btn
+	{
+		width: 134px;
+		margin-right: 74px;
+	}
+	.input-wrapper__email
+	{
+		&:before
+		{
+			content:'Неверный e-mail или пароль';
+		}
+	}
+}
+.autorization-checkbox-label
+{
+	display: inline-block;
+	position: relative;
+	padding-left: 22px;
+	font-size: 14px;
+	color: #334D66;
+	cursor: pointer;
+	display: block;
+	margin-top: 3px;
+	text-align: left;
+	margin-bottom: 8px;
+}
+.checkbox
+{
+	visibility: hidden;
+	position: absolute;
+}
+.checkbox:not(checked) + span
+{
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	border: 1px solid #CFDAE6;
+	border-radius: 2px;
+	position: absolute;
+	left: 0;
+	top: 3px;
+	transition: border 0.3s;
+}
+.checkbox:checked + span:before
+{
+	content: '';
+	width: 10px;
+	height: 10px;
+	background: #e89e2d;
+	display: block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: background 0.3s;
+    margin-left: 1px;
+    margin-top: 1px;
+    border-radius: 2px
+}
+
+@media (max-width: 1300px)
+{
+	.registration-descr
+	{
+		padding-left: 40px;
+	}
+}
+@media (max-width: 1200px)
+{
+	.registration-wrapper
+	{
+		height: auto;
+	}
+	.registration-form
+	{
+		position: static;
+		margin: 0 auto;
+		padding-bottom: 30px;
+		padding-top: 30px;
+		margin-bottom: 20px;
+		border-radius: 5px;
+	}
+	.registration-descr
+	{
+		width: 100%;
+		text-align: center;
+		margin-bottom: 50px;
+		padding-top: 30px;
+	}
+	.overlay
+	{
+		display: block !important;
+	}
+}
+@media (max-width: 767px)
+{
+	.autorization-form
+	{
+		text-align: center;
+		.reg-btn
+		{
+			margin-right: 0;
+			display: block;
+			margin: 0 auto;
+			margin-top: 20px;
+		}
+	}
+	.registration-text
+	{
+		font-size: 16px; 
+	}
+	.registration-form
+	{
+		width: 90%;
+	}
+	.registration-descr
+	{
+		padding-left: 0;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.registration-title
+	{
+		font-size: 33px;
+	}
+	.input-wrapper
+	{
+		position: relative;
+		&.error
+		{
+			&:before
+			{
+				display: none;
+			}
+			&:after
+			{
+				display: none;
+			}
+			.registration-input
+			{
+				border-bottom: 2px solid #ff0000 !important;
+			}
+		}
+		&.error:hover
+		{
+			&:before
+			{
+				display: inline-block;
+				left: 0;
+				right: 0;
+				top: -50px;
+				background-color: #ff0000;
+			}
+			&:after
+			{
+				display: inline-block;
+				left: 0;
+				right: 0;
+				margin: 0 auto;
+				top: -5px;
+				width: 5px;
+				border: 5px solid transparent;
+				border-top: 5px solid #ff0000;
+			}
+			.registration-input
+			{
+				border-bottom: 2px solid #ff0000 !important;
+			}
+		}
+	}
+}
