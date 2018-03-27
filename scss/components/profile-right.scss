@@ -7,6 +7,16 @@
 	border: 1px solid #e5e5e5;
 	background-color: #ffffff;
 	margin-bottom: 16px;
+	&__title {
+		margin-top: 17px;
+		margin-bottom: 15px;
+		margin-left: 30px;
+		margin-right: 30px;
+        font-family: $roboto;
+        font-size: 28px;
+
+        font-weight: 500;
+	}
 }
 .profile-tabs__button
 {

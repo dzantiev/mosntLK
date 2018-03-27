@@ -103,7 +103,7 @@ gulp.task('watch', function() {
 	gulp.watch(['src/*.html','src/inc/**/*.html'],['fileinclude']);
 	gulp.watch(['js/vendors/*.js', 'js/main.js', 'js/modules/*.js'],['scripts']);
 	gulp.watch('inc/*.html', browserSync.reload);
-	gulp.watch('**/*.html', browserSync.reload);
+	gulp.watch('*.html', browserSync.reload);
 	gulp.watch('js/*.js', browserSync.reload);
 });
 

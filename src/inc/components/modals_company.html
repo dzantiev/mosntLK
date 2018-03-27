@@ -1,0 +1,56 @@
+<div class="overlay _overlay card-overlay" onclick="o2.popups.closePopup();">
+    <div class="profile-edit-popup popup" onclick="event.stopPropagation();">
+        <div class="profile-edit-popup__close"
+             onclick="o2.popups.closePopup();">
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <div class="profile-edit-popup__title">Редактирование профиля</div>
+        <div class="profile-edit-popup__undertitle">Контактная информация</div>
+        <div class="profile-edit-popup__input-wrapper">
+            <input placeholder="Фамилия" type="text">
+        </div>
+        <div class="profile-edit-popup__input-wrapper">
+            <input placeholder="Имя" type="text">
+        </div>
+        <div class="profile-edit-popup__input-wrapper">
+            <input placeholder="Город" type="text">
+        </div>
+        <div class="profile-edit-popup__input-wrapper">
+            <input placeholder="Пол" type="text">
+        </div>
+        <div class="profile-edit-popup__input-wrapper">
+            <input placeholder="Телефон" type="text">
+        </div>
+        <div class="profile-edit-popup__input-wrapper">
+            <input placeholder="Доп. телефон" type="text">
+        </div>
+        <div class="profile-edit-popup__input-wrapper">
+            <input placeholder="Email" type="text">
+        </div>
+        <div class="profile-edit-popup__undertitle">Изменить пароль</div>
+        <div class="profile-edit-popup__input-wrapper">
+            <input placeholder="Введите старый пароль" type="password">
+            <div class="show-pass" onclick="o2.showPass(this)"></div>
+        </div>
+        <div class="profile-edit-popup__input-wrapper">
+            <input placeholder="Введите новый пароль" type="password">
+            <div class="show-pass" onclick="o2.showPass(this)"></div>
+        </div>
+        <div class="profile-edit-popup__avatar-block">
+            <div class="profile-edit-popup__avatar-block-title">
+                Загрузить аватар (250x250 пикселей)
+            </div>
+            <div class="profile-edit-popup__avatar-block-link">
+                <a href="#">Добавить аватар</a>
+            </div>
+            <label class="autorization-checkbox-label">
+                <input type="checkbox" class="checkbox">
+                <span></span>
+                Подписаться на рассылку
+            </label>
+            <div class="profile-edit-popup__avatar-block-button">
+                <button>Сохранить</button>
+            </div>
+        </div>
+    </div>
+</div>

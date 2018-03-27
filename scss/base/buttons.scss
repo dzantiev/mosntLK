@@ -1,0 +1,13 @@
+.button {
+    border-radius: 3px;
+    color: #fff;
+    font-family: $roboto;
+    font-size: 14px;
+    line-height: 30px;
+    display: inline-block;
+    height: 36px;
+    padding: 3px 25px;
+    &_warning {
+        background-color: #d8880d;
+    }
+}

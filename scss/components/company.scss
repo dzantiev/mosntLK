@@ -1,0 +1,120 @@
+.content_wrap_company {
+    .profile-right {
+        margin-left: 271px;
+    }
+    .profile-left {
+        width: 260px;
+    }
+    .profile-tabs-content {
+        height: auto;
+    }
+}
+
+.profile-search {
+    padding: 6px 6px 10px;
+    background-color: #ffffff;
+    position: relative;
+    border: 1px solid #e5e5e5;
+    margin-bottom: 16px;
+}
+
+
+.search {
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #b0bac2;
+    padding: 5px 7px 0px;
+
+    &__input {
+        border-bottom: none !important;
+        margin-bottom: 0;
+        height: 28px !important;
+        line-height: 28px !important;
+
+    }
+    &__submit {
+        border: none;
+        background: url('../images/search.png') 0 0 no-repeat;
+        display: block;
+        width: 17px;
+        height: 17px;
+        position: relative;
+        top: -2px;
+        text-indent: -9999px;
+    }
+}
+
+.profile-balanceBlock {
+    border: 1px solid #e5e5e5;
+    background-color: #ffffff;
+    text-align: left;
+    margin-bottom: 16px;
+    padding: 19px 14px 18px 52px;
+    position: relative;
+    &__avatar {
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        left: 13px;
+        top: 14px;
+        border-radius: 50%;
+        overflow: hidden;
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            transform: scale(2);
+        }
+    }
+
+    &__company {
+        font-family: $roboto;
+        font-size: 18px;
+        margin-bottom: 9px;
+    }
+
+    &__sum {
+        color: #74708d;
+        font-family: $roboto;
+        font-size: 16px;
+        line-height: 18px;
+        strong {
+            font-weight: 700;
+        }
+
+    }
+}
+
+.profile-left-button {
+    margin-top: 19px;
+    .button {
+        min-width: 194px;
+    }
+}
+
+.profile-tab__diagram {
+
+}
+
+.profile-table {
+    width:100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+.profile-table td,
+.profile-table th{
+    border-top: 1px solid #e5e5e5;
+    &:first-child {
+        padding-left: 50px;
+    }
+    &:last-child {
+        padding-right: 50px;
+    }
+}
+.profile-table tbody tr:last-child td{
+    border-bottom: 1px solid #e5e5e5;
+}
+
+
+

@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <title>МосНефтеТранс</title>
+    @@include('./inc/components/pagehead.html')
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+</head>
+<body class="side_open">
+<div id="site" class="profile-wrapper">
+    @@include('./inc/components/header.html')
+    <div id="body">
+        @@include('./inc/components/sidebar.html')
+        <div class="content_wrap content_wrap__profile content_wrap_company clearfix">
+
+            <!-- Begin profile-left -->
+            <div class="profile-left">
+
+                <!-- Begin profile-search -->
+                <div class="profile-search">
+                    <form action="#" class="search">
+
+                        <input type="text"
+                               class="search__input"
+                               placeholder="Поиск">
+
+                        <input type="submit" class="search__submit">
+
+                    </form>
+                </div>
+                <!-- End profile-search -->
+
+                <!-- Begin profile-balance -->
+                <div class="profile-balanceBlock">
+                    <div class="profile-balanceBlock__company">
+                        Асфальтостроение
+                        <div class="profile-balanceBlock__avatar">
+                            <img src="./images/profile-photo.png">
+                        </div>
+                    </div>
+                    <div class="profile-balanceBlock__sum">
+                        Баланс:
+                        <strong>965 003</strong>
+                        ₽
+                    </div>
+                </div>
+                <!-- End profile-balance -->
+
+                <!-- Begin profile-addCompany -->
+                <div class="profile-left-button">
+                    <a href="" class="button button_warning">Добавить компанию</a>
+                </div>
+                <!-- End profile-addCompany -->
+
+            </div>
+            <!-- End profile-left -->
+
+            <!-- Begin profile-right -->
+            <div class="profile-right">
+
+                <!-- Begin profile-tabs -->
+                <div class="profile-tabs">
+                    <h1 class="profile-tabs__title">Все компании</h1>
+
+                    <!--Временно-->
+                    <script>
+                        $(function(){
+                            $('.mob_menu_link').trigger('click');
+                        });
+                    </script>
+                    <!--Временно-->
+
+                    <!-- Begin profile-tabs__buttons  -->
+                    <div class="profile-tabs__buttons clearfix">
+                        <div class="profile-tabs__button active" data-tab-id="0"
+                             onclick="o2.tabs.openTab(this, event)">Сделки
+                        </div>
+                        <div class="profile-tabs__button" data-tab-id="1"
+                             onclick="o2.tabs.openTab(this, event)">Счета
+                        </div>
+                        <div class="profile-tabs__button" data-tab-id="1"
+                             onclick="o2.tabs.openTab(this, event)">Договоры
+                        </div>
+                        <div class="profile-tabs__button" data-tab-id="1"
+                             onclick="o2.tabs.openTab(this, event)">Реквизиты
+                        </div>
+                    </div>
+                    <!-- End profile-tabs__buttons  -->
+
+                    <!-- Begin profile-tabs-content  -->
+                    <div class="profile-tabs-content">
+
+                        <!-- Begin profile-tab  -->
+                        <div class="profile-tab active" data-tab-id="0">
+                            <div class="profile-tab__diagram">
+                                <canvas id="diagram5" width="400"
+                                        height="80"></canvas>
+                            </div>
+                            <table class="profile-table">
+                                <thead>
+                                    <tr>
+                                        <th>Дата</th>
+                                        <th>Компания</th>
+                                        <th>Базис отгрузки</th>
+                                        <th>Вид топлива</th>
+                                        <th>Цена за еденицу, ₽</th>
+                                        <th>Объем отгрузки</th>
+                                        <th>Общая сумма, ₽</th>
+                                        <th>Бонус, ₽</th>
+                                        <th>Статус</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td>03.07.2017</td>
+                                        <td>Асфальтостроение</td>
+                                        <td>Калужская НБ</td>
+                                        <td>Дизельное топливо
+                                            Вид С</td>
+                                        <td>32.45</td>
+                                        <td>100 000 тонн</td>
+                                        <td>549 320 </td>
+                                        <td>12 760</td>
+                                        <td>
+                                            <span class="label label_success">Выполняется</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>03.07.2017</td>
+                                        <td>Бетоностроительство</td>
+                                        <td>Калужская НБ</td>
+                                        <td>Дизельное топливо
+                                            Вид С</td>
+                                        <td>32.45</td>
+                                        <td>100 000 тонн</td>
+                                        <td>549 320 </td>
+                                        <td>12 760</td>
+                                        <td>
+                                            <span class="label label_default">На модерации</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>03.07.2017</td>
+                                        <td>Бетоностроительство</td>
+                                        <td>Калужская НБ</td>
+                                        <td>Дизельное топливо
+                                            Вид С</td>
+                                        <td>32.45</td>
+                                        <td>100 000 тонн</td>
+                                        <td>549 320 </td>
+                                        <td>12 760</td>
+                                        <td>
+                                            <span class="label label_default">На модерации</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>03.07.2017</td>
+                                        <td>Бетоностроительство</td>
+                                        <td>Калужская НБ</td>
+                                        <td>Дизельное топливо
+                                            Вид С</td>
+                                        <td>32.45</td>
+                                        <td>100 000 тонн</td>
+                                        <td>549 320 </td>
+                                        <td>12 760</td>
+                                        <td>
+                                            <span class="label label_default">На модерации</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>03.07.2017</td>
+                                        <td>Бетоностроительство</td>
+                                        <td>Калужская НБ</td>
+                                        <td>Дизельное топливо
+                                            Вид С</td>
+                                        <td>32.45</td>
+                                        <td>100 000 тонн</td>
+                                        <td>549 320 </td>
+                                        <td>12 760</td>
+                                        <td>
+                                            <span class="label label_default">На модерации</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>03.07.2017</td>
+                                        <td>Бетоностроительство</td>
+                                        <td>Калужская НБ</td>
+                                        <td>Дизельное топливо
+                                            Вид С</td>
+                                        <td>32.45</td>
+                                        <td>100 000 тонн</td>
+                                        <td>549 320 </td>
+                                        <td>12 760</td>
+                                        <td>
+                                            <span class="label label_default">На модерации</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>03.07.2017</td>
+                                        <td>Бетоностроительство</td>
+                                        <td>Калужская НБ</td>
+                                        <td>Дизельное топливо
+                                            Вид С</td>
+                                        <td>32.45</td>
+                                        <td>100 000 тонн</td>
+                                        <td>549 320 </td>
+                                        <td>12 760</td>
+                                        <td>
+                                            <span class="label label_default">На модерации</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>03.07.2017</td>
+                                        <td>Бетоностроительство</td>
+                                        <td>Калужская НБ</td>
+                                        <td>Дизельное топливо
+                                            Вид С</td>
+                                        <td>32.45</td>
+                                        <td>100 000 тонн</td>
+                                        <td>549 320 </td>
+                                        <td>12 760</td>
+                                        <td>
+                                            <span class="label label_default">На модерации</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>03.07.2017</td>
+                                        <td>Бетоностроительство</td>
+                                        <td>Калужская НБ</td>
+                                        <td>Дизельное топливо
+                                            Вид С</td>
+                                        <td>32.45</td>
+                                        <td>100 000 тонн</td>
+                                        <td>549 320 </td>
+                                        <td>12 760</td>
+                                        <td>
+                                            <span class="label label_default">На модерации</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+
+                            </table>
+
+                        </div>
+                        <!-- End profile-tab  -->
+
+                        <!-- Begin profile-tab  -->
+                        <div class="profile-tab" data-tab-id="1">
+                            <div class="support-chat">
+                                <div class="messages-wrapper">
+                                    <div class="message-item">
+                                        <div class="message-item__avatar">
+                                            <img src="images/profile-photo.png"
+                                                 alt="">
+                                        </div>
+                                        <div class="message-item__message">
+                                            <div class="message-item__name">Вы
+                                            </div>
+                                            <div class="message-item__text">
+                                                Здравсвтуйте. Подскажите как
+                                                начисляются бонусы?
+                                            </div>
+                                            <div class="message-item__time">10
+                                                минут назад
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="message-item">
+                                        <div class="message-item__avatar">
+                                            <img src="images/profile-photo.png"
+                                                 alt="">
+                                        </div>
+                                        <div class="message-item__message">
+                                            <div class="message-item__name">
+                                                Администратор
+                                            </div>
+                                            <div class="message-item__text">
+                                                Добрый день. Бонусы начисляются
+                                                по формуле исходя из ваших
+                                                отгрузок и продаж
+                                            </div>
+                                            <div class="message-item__time">10
+                                                минут назад
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="message-item">
+                                        <div class="message-item__avatar">
+                                            <img src="images/profile-photo.png"
+                                                 alt="">
+                                        </div>
+                                        <div class="message-item__message">
+                                            <div class="message-item__name">Вы
+                                            </div>
+                                            <div class="message-item__text">
+                                                Понятно, спасибо.
+                                            </div>
+                                            <div class="message-item__time">10
+                                                минут назад
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div placeholder="Введите ваше сообщение"
+                                     class="message-input"
+                                     contenteditable="true"></div>
+                            </div>
+                        </div>
+                        <!-- End profile-tab  -->
+
+                    </div>
+                    <!-- End profile-tabs-content  -->
+
+                </div>
+                <!-- End profile-tabs -->
+
+            </div>
+            <!-- Begin profile-right -->
+
+        </div>
+    </div>
+</div>
+@@include('./inc/components/modals_company.html')
+</body>
+</html>
+

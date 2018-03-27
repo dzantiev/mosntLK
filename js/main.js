@@ -23,6 +23,7 @@ var o2 =
 		this.diagrams.diagram2();
 		this.diagrams.diagram3();
 		this.diagrams.diagram4();
+        this.diagrams.diagram5();
 		this.formStyler.init();
 		this.makePhoneMask();
 	},
@@ -266,6 +267,70 @@ var o2 =
 					    }
 			});
 		},
+        diagram5: function()
+        {
+            let pie = document.querySelector('#diagram5');
+            if(pie == null)
+                return false
+            var myDoughnutChart = new Chart(pie,
+                {
+                    "type":"line",
+                    "data":{
+                        "labels":[
+                            '03.04',
+                            '03.04',
+                            '03.04',
+                            '03.04',
+                            '03.04',
+                            '03.04',
+                            '03.04',
+                            '03.04',
+                            '03.04',
+                            '03.04',
+                            '03.04',
+                            '03.04',
+                            '03.04',
+                        	],
+                        "datasets":[
+                            {
+                                "label":'Цена за единицу',
+                                "data":[
+                                	32.45,
+                                    34.45,
+                                    32.45,
+                                    34.45,
+                                    34.45,
+                                    34.45,
+                                    32.45,
+                                    37.45,
+                                    34.45,
+                                    34.45,
+                                    32.45,
+                                    32.45,
+                                    34.45,
+                                    34.45
+                                	],
+                                "fill": false,
+                                spanGaps: false,
+                                borderColor: '#d8880d',
+                                "borderWidth": 1,
+                                "FontSize":"10",
+                                lineTension: 0.000001
+
+                            }]
+                    },
+                    options: {
+                        legend: {
+                            labels: {
+                                FontFamily: 'Roboto',
+                            }
+                        },
+                        layout: {
+                            padding: 10
+                        }
+                    }
+                });
+        },
 	}
 }
 
